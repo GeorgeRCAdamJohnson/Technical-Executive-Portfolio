@@ -21,11 +21,6 @@ const pulse = keyframes`
   100% { transform: scale(1); }
 `;
 
-const shimmer = keyframes`
-  0% { background-position: -200px 0; }
-  100% { background-position: calc(200px + 100%) 0; }
-`;
-
 const typing = keyframes`
   from { width: 0; }
   to { width: 100%; }
