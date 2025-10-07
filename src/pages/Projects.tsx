@@ -339,17 +339,17 @@ const Projects: React.FC = () => {
   const location = useLocation();
   const [activeFilter, setActiveFilter] = useState<string>('all');
   
-  // Map URL paths to project IDs or categories
-  const urlToFilter: { [key: string]: string } = {
-    '/ai-innovation': 'ai',
-    '/sci-fi-form-builder': 'sci-fi-form-builder',
-    '/ai-art-evolution': 'ai-art-evolution', 
-    '/forge-form-builder': 'forge-form-builder',
-    '/technical-leadership': 'technical-leadership',
-    '/agentic-ai': 'agentic-ai'
-  };
-
   useEffect(() => {
+    // Map URL paths to project IDs or categories
+    const urlToFilter: { [key: string]: string } = {
+      '/ai-innovation': 'ai',
+      '/sci-fi-form-builder': 'sci-fi-form-builder',
+      '/ai-art-evolution': 'ai-art-evolution', 
+      '/forge-form-builder': 'forge-form-builder',
+      '/technical-leadership': 'technical-leadership',
+      '/agentic-ai': 'agentic-ai'
+    };
+    
     const filterFromUrl = urlToFilter[location.pathname];
     if (filterFromUrl) {
       setActiveFilter(filterFromUrl);

@@ -179,9 +179,7 @@ const NavToggle = styled.button`
   }
 `;
 
-interface NavigationProps {}
-
-const Navigation: React.FC<NavigationProps> = () => {
+const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   const location = useLocation();
