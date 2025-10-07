@@ -57,6 +57,8 @@ export const resumeData: ResumeData = {
     title: "VP/Director of Engineering Candidate",
     summary: "Visionary technology leader with 15+ years of experience driving enterprise transformation across application engineering, AI deployment, and software lifecycle governance. Currently leading the largest Atlassian Government Cloud migration in company history at Blue Origin. Proven success in aligning cross-functional teams and managing multimillion-dollar portfolios.",
     location: "United States",
+    email: "adam.johnson@executive.tech",
+    linkedin: "https://linkedin.com/in/adamjohnson-tech-executive",
   },
   experience: [
     {
