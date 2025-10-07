@@ -627,8 +627,9 @@ const Home: React.FC = () => {
               largest Atlassian Government Cloud migration in company history at Blue Origin.
               <br /><br />
               <strong>Seeking challenging opportunities</strong> to mentor teams, make impactful decisions, and 
-              apply my diverse skills beyond just Atlassian. Passionate about Film, Art, Animation, and 
-              spending quality time with family.
+              apply my diverse skills beyond just Atlassian. Experienced in hiring high quality teams while 
+              maintaining a high quality bar. Passionate about exploring and growing my skillset, plus 
+              Film, Art, Animation, and spending quality time with family.
             </HeroDescription>
             <HeroCTA>
               <Button to="/executive-profile" $variant="primary">

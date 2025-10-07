@@ -349,7 +349,8 @@ const ExecutiveProfile: React.FC = () => {
             }}>
               I'm seeking <strong>challenging work</strong> where I can mentor and train others, 
               make impactful decisions, and use my skills to improve any company I work with. 
-              I want something engaging that doesn't paint me into a corner of Atlassian only.
+              I want to <strong>explore and grow my skillset</strong> while maintaining a <strong>high quality bar</strong>. 
+              I'm experienced in <strong>hiring high quality teams</strong> and want something engaging that doesn't paint me into a corner of Atlassian only.
             </p>
             <p style={{ 
               fontSize: 'var(--font-size-lg)', 
@@ -360,6 +361,69 @@ const ExecutiveProfile: React.FC = () => {
               I love spending time with my family and helping my daughter learn and grow. 
               These interests fuel my creativity and bring fresh perspectives to my technical leadership.
             </p>
+          </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <SectionTitle>Leadership Philosophy</SectionTitle>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+            gap: 'var(--spacing-lg)',
+            marginBottom: 'var(--spacing-xl)'
+          }}>
+            <div style={{ 
+              background: 'linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%)', 
+              color: 'var(--white)',
+              padding: 'var(--spacing-xl)', 
+              borderRadius: 'var(--radius-lg)',
+              boxShadow: 'var(--shadow-lg)'
+            }}>
+              <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-xl)' }}>
+                <i className="fas fa-chart-line" style={{ marginRight: 'var(--spacing-sm)' }}></i>
+                Continuous Growth
+              </h3>
+              <p style={{ lineHeight: '1.6' }}>
+                I believe in constantly exploring and growing my skillset. Technology evolves rapidly, 
+                and effective leaders must stay ahead of the curve while fostering a culture of learning within their teams.
+              </p>
+            </div>
+            
+            <div style={{ 
+              background: 'linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%)', 
+              color: 'var(--white)',
+              padding: 'var(--spacing-xl)', 
+              borderRadius: 'var(--radius-lg)',
+              boxShadow: 'var(--shadow-lg)'
+            }}>
+              <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-xl)' }}>
+                <i className="fas fa-award" style={{ marginRight: 'var(--spacing-sm)' }}></i>
+                High Quality Standards
+              </h3>
+              <p style={{ lineHeight: '1.6' }}>
+                I maintain a high quality bar in everything I do - from code architecture to team performance. 
+                Quality isn't just about the end product; it's about the processes, culture, and standards we establish.
+              </p>
+            </div>
+            
+            <div style={{ 
+              background: 'linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-light) 100%)', 
+              color: 'var(--white)',
+              padding: 'var(--spacing-xl)', 
+              borderRadius: 'var(--radius-lg)',
+              boxShadow: 'var(--shadow-lg)'
+            }}>
+              <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-xl)' }}>
+                <i className="fas fa-users" style={{ marginRight: 'var(--spacing-sm)' }}></i>
+                Team Excellence
+              </h3>
+              <p style={{ lineHeight: '1.6' }}>
+                I'm experienced in hiring high quality teams and believe that great products come from great people. 
+                My focus is on building diverse, skilled teams that challenge each other and drive innovation.
+              </p>
+            </div>
           </div>
         </Container>
       </Section>

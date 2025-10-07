@@ -160,7 +160,8 @@ const Footer: React.FC = () => {
             <p>
               <strong>What I'm Looking For:</strong> Challenging work where I can mentor and train others, 
               make impactful decisions, and use my skills to improve any company I work with. 
-              I want something engaging that doesn't paint me into a corner of Atlassian only.
+              I want to explore and grow my skillset while maintaining a high quality bar. 
+              I'm experienced in hiring high quality teams and want something engaging that doesn't paint me into a corner of Atlassian only.
             </p>
             <p>
               <strong>Personal Interests:</strong> Passionate about Film, Art, and Animation. 
