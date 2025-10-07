@@ -158,8 +158,13 @@ const Footer: React.FC = () => {
               initiatives at Blue Origin while exploring VP/Director opportunities.
             </p>
             <p>
-              Passionate about building high-performing teams, driving innovation, and 
-              delivering measurable business impact through technology leadership.
+              <strong>What I'm Looking For:</strong> Challenging work where I can mentor and train others, 
+              make impactful decisions, and use my skills to improve any company I work with. 
+              I want something engaging that doesn't paint me into a corner of Atlassian only.
+            </p>
+            <p>
+              <strong>Personal Interests:</strong> Passionate about Film, Art, and Animation. 
+              I love spending time with my family and helping my daughter learn and grow.
             </p>
           </FooterSection>
           

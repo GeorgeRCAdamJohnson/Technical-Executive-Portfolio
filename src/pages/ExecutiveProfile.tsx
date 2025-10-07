@@ -334,6 +334,38 @@ const ExecutiveProfile: React.FC = () => {
 
       <Section>
         <Container>
+          <SectionTitle>What I'm Looking For</SectionTitle>
+          <div style={{ 
+            background: 'var(--bg-secondary)', 
+            padding: 'var(--spacing-xl)', 
+            borderRadius: 'var(--radius-lg)',
+            marginBottom: 'var(--spacing-xl)'
+          }}>
+            <p style={{ 
+              fontSize: 'var(--font-size-lg)', 
+              lineHeight: '1.8', 
+              marginBottom: 'var(--spacing-md)',
+              color: 'var(--text-primary)'
+            }}>
+              I'm seeking <strong>challenging work</strong> where I can mentor and train others, 
+              make impactful decisions, and use my skills to improve any company I work with. 
+              I want something engaging that doesn't paint me into a corner of Atlassian only.
+            </p>
+            <p style={{ 
+              fontSize: 'var(--font-size-lg)', 
+              lineHeight: '1.8',
+              color: 'var(--text-primary)'
+            }}>
+              <strong>Personal Passion:</strong> I have a deep passion for Film, Art, and Animation. 
+              I love spending time with my family and helping my daughter learn and grow. 
+              These interests fuel my creativity and bring fresh perspectives to my technical leadership.
+            </p>
+          </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
           <SectionTitle>Professional Experience</SectionTitle>
           <ExperienceGrid>
             {resumeData.experience.map((exp) => (

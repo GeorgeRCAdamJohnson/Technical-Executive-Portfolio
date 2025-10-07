@@ -625,6 +625,10 @@ const Home: React.FC = () => {
               Visionary technology leader with 15+ years of experience driving enterprise transformation across 
               application engineering, AI deployment, and software lifecycle governance. Currently leading the 
               largest Atlassian Government Cloud migration in company history at Blue Origin.
+              <br /><br />
+              <strong>Seeking challenging opportunities</strong> to mentor teams, make impactful decisions, and 
+              apply my diverse skills beyond just Atlassian. Passionate about Film, Art, Animation, and 
+              spending quality time with family.
             </HeroDescription>
             <HeroCTA>
               <Button to="/executive-profile" $variant="primary">
