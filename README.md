@@ -1,4 +1,4 @@
-# Adam Johnson - Technical Executive Portfolio
+# Technical Executive Portfolio - Adam Johnson
 
 A modern React-based portfolio website showcasing VP/Director level leadership capabilities in AI, software engineering, and technology innovation.
 
@@ -7,69 +7,76 @@ A modern React-based portfolio website showcasing VP/Director level leadership c
 - **Executive Profile**: Comprehensive leadership profile with actual resume content
 - **AI Innovation Portfolio**: Cutting-edge AI projects including agentic development systems
 - **Project Showcases**: Detailed technical achievements and business impact
+- **Leadership Experience**: Real LinkedIn testimonials and team management highlights
 - **Responsive Design**: Mobile-first approach with modern styling
 - **Type Safety**: Built with TypeScript for robust development
 - **Professional Styling**: Consistent design system with styled-components
+- **Numbered HTML Labels**: Development-friendly element identification system
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technology Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Styled Components with CSS-in-JS
+- **Routing**: React Router for SPA navigation
+- **Build Tool**: Vite for fast development and building
+- **Deployment**: Netlify-ready with optimized builds
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/GeorgeRCAdamJohnson/Technical-Executive-Portfolio.git
+   cd Technical-Executive-Portfolio
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📱 Mobile Responsive Design
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The portfolio features comprehensive mobile responsiveness with:
+- Full-width containers on mobile devices
+- Optimized padding and spacing for different screen sizes
+- Touch-friendly navigation and interactions
+- Professional presentation across all device types
+
+## 🔧 Development Features
+
+### HTML Element Labeling System
+Each major section includes numbered labels for easy development reference:
+- Navigation: `Header • <nav>`
+- Page sections: `1 • <section>`, `2 • <div>`, etc.
+- Interactive elements with clear HTML element indicators
+
+### Professional Content
+- Real resume data integration
+- Authentic LinkedIn testimonials
+- Executive-level project showcases
+- Technical leadership highlights
+
+## 📄 Pages
+
+- **Home**: Discovery-driven UX with featured projects and executive summary
+- **Executive Profile**: Comprehensive professional background and experience
+- **Projects**: Detailed portfolio with filtering and project showcases
+- **Leadership**: Team management experience with real testimonials
+
+## 🚀 Deployment
+
+The project is configured for easy deployment to Netlify or similar platforms with optimized build output and proper routing configuration.
+
+---
+
+*Showcasing 15+ years of technical leadership experience across enterprise transformation, AI deployment, and software lifecycle governance.*
