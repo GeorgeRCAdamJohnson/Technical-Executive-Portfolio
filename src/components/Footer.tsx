@@ -2,24 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { resumeData } from '../data/resumeData';
 
-const NumberBadge = styled.div`
-  position: absolute;
-  top: var(--spacing-sm);
-  right: var(--spacing-sm);
-  background: var(--accent-color);
-  color: var(--white);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  z-index: 10;
-  box-shadow: var(--shadow-sm);
-  white-space: nowrap;
-`;
-
 const FooterContainer = styled.footer`
   background: var(--bg-dark);
   color: var(--text-light);
@@ -147,7 +129,6 @@ const Footer: React.FC = () => {
   
   return (
     <FooterContainer>
-      <NumberBadge>Footer • &lt;footer&gt;</NumberBadge>
       <FooterContent>
         <FooterGrid>
           <FooterSection>

@@ -2,24 +2,6 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
-const NumberBadge = styled.div`
-  position: absolute;
-  top: var(--spacing-sm);
-  right: var(--spacing-sm);
-  background: var(--accent-color);
-  color: var(--white);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  z-index: 10;
-  box-shadow: var(--shadow-sm);
-  white-space: nowrap;
-`;
-
 const NavContainer = styled.nav`
   background: var(--bg-primary);
   box-shadow: var(--shadow-md);
@@ -216,7 +198,6 @@ const Navigation: React.FC = () => {
 
   return (
     <NavContainer>
-      <NumberBadge>Header • &lt;nav&gt;</NumberBadge>
       <NavContent>
         <NavLogo>
           <h2>Adam Johnson</h2>

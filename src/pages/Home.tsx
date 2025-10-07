@@ -30,29 +30,41 @@ const blink = keyframes`
   50% { border-color: transparent; }
 `;
 
-const NumberBadge = styled.div`
-  position: absolute;
-  top: var(--spacing-sm);
-  right: var(--spacing-sm);
-  background: var(--accent-color);
+const AchievementNotification = styled.div<{ $visible: boolean }>`
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--success-color) 0%, #2ecc71 100%);
   color: var(--white);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  z-index: 10;
-  box-shadow: var(--shadow-sm);
-  white-space: nowrap;
-`;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  transform: translateX(${props => props.$visible ? '0' : '400px'});
+  opacity: ${props => props.$visible ? '1' : '0'};
+  transition: all 0.5s ease;
+  z-index: 10000;
+  min-width: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 
-const PageContainer = styled.div`
-  min-height: calc(100vh - 70px);
-  overflow-x: hidden;
-  position: relative;
-  width: 100%;
+  @media (max-width: 768px) {
+    right: 10px;
+    min-width: 250px;
+    padding: var(--spacing-sm);
+  }
+
+  .trophy-icon {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    animation: ${bounce} 2s infinite;
+  }
+
+  .achievement-text {
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+  }
 `;
 
 const HeroSection = styled.section`
@@ -597,18 +609,13 @@ const Home: React.FC = () => {
   };
 
   return (
-    <PageContainer>
-      <NumberBadge>0 • &lt;main&gt;</NumberBadge>
+    <>
       <AchievementNotification $visible={showAchievement}>
-        <NumberBadge style={{position: 'relative', top: 'auto', right: 'auto', marginBottom: 'var(--spacing-xs)'}}>
-          Toast • &lt;div&gt;
-        </NumberBadge>
         <div className="trophy-icon">🏆</div>
         <div className="achievement-text">{achievementText}</div>
       </AchievementNotification>
 
       <HeroSection>
-        <NumberBadge>1 • &lt;section&gt;</NumberBadge>
         <HeroContainer>
           <HeroContent>
             <HeroTitle>
@@ -636,7 +643,6 @@ const Home: React.FC = () => {
             </HeroCTA>
           </HeroContent>
           <HeroStats onClick={handleStatsClick}>
-            <NumberBadge>2 • &lt;div&gt;</NumberBadge>
             <StatItem $delay={0}>
               <StatNumber $isAnimating={isStatsAnimating}>15+</StatNumber>
               <StatLabel>Years Experience</StatLabel>
@@ -658,7 +664,6 @@ const Home: React.FC = () => {
           <SectionTitle>Executive Summary</SectionTitle>
           <ExecutiveGrid>
             <ExecutiveCard className="card" $index={0}>
-              <NumberBadge>3 • &lt;div&gt;</NumberBadge>
               <CardIcon>
                 <i className="fas fa-brain"></i>
               </CardIcon>
@@ -666,7 +671,6 @@ const Home: React.FC = () => {
               <p>Leading the largest Atlassian Government Cloud migration in company history at Blue Origin, with expertise in enterprise application strategy and vendor governance across multimillion-dollar portfolios.</p>
             </ExecutiveCard>
             <ExecutiveCard className="card" $index={1}>
-              <NumberBadge>4 • &lt;div&gt;</NumberBadge>
               <CardIcon>
                 <i className="fas fa-users-cog"></i>
               </CardIcon>
@@ -674,7 +678,6 @@ const Home: React.FC = () => {
               <p>Experienced in leading distributed teams across multiple U.S. states, mentoring high-performing teams, and advising executives on application strategy and innovation initiatives.</p>
             </ExecutiveCard>
             <ExecutiveCard className="card" $index={2}>
-              <NumberBadge>5 • &lt;div&gt;</NumberBadge>
               <CardIcon>
                 <i className="fas fa-rocket"></i>
               </CardIcon>
@@ -686,7 +689,6 @@ const Home: React.FC = () => {
       </Section>
 
       <Section id="projects" $bgAlt>
-        <NumberBadge>6 • &lt;section&gt;</NumberBadge>
         <Container>
           <SectionTitle>Featured Projects</SectionTitle>
           <ProjectsGrid>
@@ -759,7 +761,7 @@ const Home: React.FC = () => {
           )}
         </Container>
       </Section>
-    </PageContainer>
+    </>
   );
 };
 
