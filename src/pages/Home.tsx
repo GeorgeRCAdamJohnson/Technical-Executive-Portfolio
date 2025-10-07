@@ -30,6 +30,12 @@ const blink = keyframes`
   50% { border-color: transparent; }
 `;
 
+const bounce = keyframes`
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+`;
+
 const AchievementNotification = styled.div<{ $visible: boolean }>`
   position: fixed;
   top: 20px;
@@ -461,54 +467,6 @@ const HiddenDetails = styled.div`
       position: absolute;
       left: 0;
       color: var(--accent-color);
-    }
-  }
-`;
-
-const AchievementNotification = styled.div<{ $visible: boolean }>`
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: linear-gradient(135deg, #10b981, #059669);
-  color: white;
-  padding: var(--spacing-md) var(--spacing-lg);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  transform: ${props => props.$visible ? 'translateX(0)' : 'translateX(calc(100% + 40px))'};
-  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  max-width: 300px;
-  word-wrap: break-word;
-  
-  .trophy-icon {
-    font-size: 1.2rem;
-    animation: ${props => props.$visible ? 'bounce 0.6s ease-in-out' : 'none'};
-    flex-shrink: 0;
-  }
-  
-  @keyframes bounce {
-    0%, 20%, 60%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    80% { transform: translateY(-5px); }
-  }
-  
-  .achievement-text {
-    font-weight: 600;
-    font-size: 0.9rem;
-    line-height: 1.3;
-  }
-  
-  @media (max-width: 768px) {
-    right: 10px;
-    top: 10px;
-    max-width: calc(100vw - 40px);
-    padding: var(--spacing-sm) var(--spacing-md);
-    
-    .achievement-text {
-      font-size: 0.8rem;
     }
   }
 `;
