@@ -75,7 +75,7 @@ const AchievementNotification = styled.div<{ $visible: boolean }>`
 
 const HeroSection = styled.section`
   background: var(--bg-gradient);
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -100,7 +100,7 @@ const HeroContainer = styled.div`
   padding: 0 var(--spacing-md);
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: var(--spacing-xxl);
+  gap: var(--spacing-lg);
   align-items: center;
   position: relative;
   z-index: 1;
@@ -111,7 +111,7 @@ const HeroContainer = styled.div`
     padding: 0 var(--spacing-sm);
     grid-template-columns: 1fr;
     text-align: center;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-md);
   }
 `;
 
