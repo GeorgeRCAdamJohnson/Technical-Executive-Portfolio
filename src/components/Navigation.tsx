@@ -9,7 +9,12 @@ const NavContainer = styled.nav`
   top: 0;
   z-index: var(--z-sticky);
   backdrop-filter: blur(10px);
-  width: 100%; /* Mobile Fix: Ensure full width on all devices */
+  width: 100%;
+  transition: var(--transition-normal);
+  
+  @media (max-width: 768px) {
+    backdrop-filter: blur(5px);
+  }
 `;
 
 const NavContent = styled.div`
@@ -25,6 +30,12 @@ const NavContent = styled.div`
   @media (max-width: 768px) {
     max-width: 100%;
     padding: 0 var(--spacing-sm);
+    height: 60px;
+  }
+  
+  @media (max-width: 480px) {
+    height: 56px;
+    padding: 0 var(--spacing-xs);
   }
 `;
 

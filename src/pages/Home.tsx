@@ -118,10 +118,18 @@ const HeroContainer = styled.div`
 const HeroContent = styled.div``;
 
 const HeroTitle = styled.h1`
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4rem, 4rem);
   line-height: 1.1;
   margin-bottom: var(--spacing-lg);
   color: var(--white);
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
   
   .typing-text {
     border-right: 3px solid var(--white);
