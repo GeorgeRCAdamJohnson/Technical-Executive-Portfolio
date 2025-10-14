@@ -224,5 +224,27 @@ export const projects: Project[] = [
     category: "enterprise",
     status: "completed",
     icon: "cogs"
+  },
+  {
+    id: "ai-cinematography",
+    title: "AI Cinematography Application",
+    subtitle: "Intelligent Film Production & Visual Storytelling Platform",
+    description: "Next-generation cinematography platform leveraging AI for automated camera movement, shot composition, and visual narrative optimization. Designed to revolutionize film production workflows through intelligent automation.",
+    technologies: ["AI/ML", "Computer Vision", "Cinematography AI", "Real-time Processing", "Film Production APIs"],
+    achievements: ["Automated Shot Composition", "Real-time Camera Intelligence", "Visual Narrative AI", "Production Workflow Integration"],
+    category: "ai",
+    status: "development",
+    icon: "video"
+  },
+  {
+    id: "radeon-small-model",
+    title: "Radeon Optimized AI Model",
+    subtitle: "AMD Graphics Card Specialized Small Language Model",
+    description: "Custom-built small language model specifically optimized for AMD Radeon graphics cards, focusing on efficient local AI processing with hardware-specific optimizations for enhanced performance and reduced latency.",
+    technologies: ["AMD ROCm", "Radeon GPU Computing", "Small Language Models", "Local AI Processing", "Hardware Optimization"],
+    achievements: ["Radeon Hardware Optimization", "Local Processing Focus", "Reduced Latency Design", "AMD-Specific Implementation"],
+    category: "ai",
+    status: "development",
+    icon: "microchip"
   }
 ];
