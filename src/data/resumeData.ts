@@ -55,7 +55,7 @@ export const resumeData: ResumeData = {
   personalInfo: {
     name: "Adam Johnson",
     title: "VP/Director of Engineering Candidate",
-    summary: "Visionary technology leader with 15+ years of experience driving enterprise transformation across application engineering, AI deployment, and software lifecycle governance. Currently leading the largest Atlassian Government Cloud migration in company history at Blue Origin. Proven success in aligning cross-functional teams and managing multimillion-dollar portfolios.",
+    summary: "Visionary technology leader with 15+ years of experience driving enterprise transformation across application engineering, AI deployment, and software lifecycle governance. Successfully executed the largest migration in company history at Blue Origin, migrating 15,000 users from Data Center to Cloud, alongside other major migrations including ServiceNOW and Airtable deprecations. Proven success in aligning cross-functional teams and managing multimillion-dollar portfolios.",
     location: "United States",
     email: "georgeRCAdam@gmail.com",
     linkedin: "https://www.linkedin.com/in/george-r-c-adam-johnson/",
@@ -66,9 +66,10 @@ export const resumeData: ResumeData = {
       title: "Sr. Manager Application Engineering & Atlassian Services",
       company: "Blue Origin",
       duration: "Jan 2020 – Present",
-      description: "Lead a distributed team across multiple U.S. states, overseeing enterprise application strategy and Atlassian product governance. Recognized industry leader in Atlassian Government Cloud, leading the largest migration in company history.",
+      description: "Lead a distributed team across multiple U.S. states, overseeing enterprise application strategy and Atlassian product governance. Successfully executed the largest migration in company history, migrating 15,000 users from Data Center to Cloud while leading other major migrations and deprecation projects.",
       achievements: [
-        "Lead the largest Atlassian Government Cloud migration in company history",
+        "Successfully migrated 15,000 users from Data Center to Cloud - largest migration in company history",
+        "Led multiple large-scale migrations and deprecation projects including ServiceNOW and Airtable transitions",
         "Manage lifecycle and vendor relationships for Box, Smartsheet, Airtable, Baserow, and Atlassian suite",
         "Oversee critical platforms: Coupa, Costpoint, Jira, Confluence, PagerDuty, Statuspage, Cognos, Kronos",
         "Built internal Application Catalog and Software Procurement Contract framework",
