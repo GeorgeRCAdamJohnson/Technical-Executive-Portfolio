@@ -134,19 +134,19 @@ const Footer: React.FC = () => {
           <FooterSection>
             <h3>About {personalInfo.name}</h3>
             <p>
-              Technical Executive with 15+ years of experience in enterprise transformation, 
-              AI deployment, and software lifecycle governance. Currently leading strategic 
-              initiatives at Blue Origin while exploring VP/Director opportunities.
+              <strong>Career Focus:</strong> Seeking VP/Director roles where I can mentor teams, 
+              drive strategic decisions, and build high-performing organizations across diverse 
+              technology stacks—not limited to any single platform or vendor ecosystem.
             </p>
             <p>
-              <strong>What I'm Looking For:</strong> Challenging work where I can mentor and train others, 
-              make impactful decisions, and use my skills to improve any company I work with. 
-              I want to explore and grow my skillset while maintaining a high quality bar. 
-              I'm experienced in hiring high quality teams and want something engaging that doesn't paint me into a corner of Atlassian only.
+              <strong>Leadership Philosophy:</strong> Experienced in hiring exceptional talent 
+              and maintaining high-quality standards while fostering growth and innovation. 
+              Looking for challenging, cross-functional opportunities that leverage my full 
+              enterprise transformation skillset.
             </p>
             <p>
               <strong>Personal Interests:</strong> Passionate about Film, Art, and Animation. 
-              I love spending time with my family and helping my daughter learn and grow.
+              Love spending time with family and helping my daughter learn and grow.
             </p>
           </FooterSection>
           
