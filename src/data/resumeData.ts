@@ -238,11 +238,11 @@ export const projects: Project[] = [
   },
   {
     id: "radeon-small-model",
-    title: "Radeon Optimized AI Model",
-    subtitle: "AMD Graphics Card Specialized Small Language Model",
-    description: "Custom-built small language model specifically optimized for AMD Radeon graphics cards, focusing on efficient local AI processing with hardware-specific optimizations for enhanced performance and reduced latency.",
-    technologies: ["AMD ROCm", "Radeon GPU Computing", "Small Language Models", "Local AI Processing", "Hardware Optimization"],
-    achievements: ["Radeon Hardware Optimization", "Local Processing Focus", "Reduced Latency Design", "AMD-Specific Implementation"],
+    title: "Radeon SML - Small Memory Language Model",
+    subtitle: "Modular AI System Optimized for Radeon GPUs with Limited VRAM",
+    description: "Advanced modular AI system featuring hardware-adaptive VRAM detection (2GB-8GB configurations), ROCm optimization, offline Wikipedia knowledge base, and revolutionary ethical safeguards based on Asimov's Three Laws of Robotics. Built specifically for AMD Radeon community with comprehensive testing and performance optimization.",
+    technologies: ["AMD ROCm", "Python 3.10+", "Vector Embeddings", "DistilBERT", "MiniLM", "Wikipedia API", "Asimov Safety Protocols", "Hardware Detection"],
+    achievements: ["Hardware-Adaptive VRAM Detection", "Ethical AI Safety Implementation", "Offline Wikipedia Knowledge Base", "2-5 Second Response Times", "Open Source Community Project", "Comprehensive Testing Suite"],
     category: "ai",
     status: "development",
     icon: "microchip"
