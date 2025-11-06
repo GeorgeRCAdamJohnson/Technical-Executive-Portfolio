@@ -227,24 +227,25 @@ export const projects: Project[] = [
   },
   {
     id: "ai-cinematography",
-    title: "AI Cinematography Application",
-    subtitle: "Intelligent Film Production & Visual Storytelling Platform",
-    description: "Next-generation cinematography platform leveraging AI for automated camera movement, shot composition, and visual narrative optimization. Designed to revolutionize film production workflows through intelligent automation.",
-    technologies: ["AI/ML", "Computer Vision", "Cinematography AI", "Real-time Processing", "Film Production APIs"],
-    achievements: ["Automated Shot Composition", "Real-time Camera Intelligence", "Visual Narrative AI", "Production Workflow Integration"],
+    title: "AI Cinematographer Platform",
+    subtitle: "Revolutionary Video Production Platform with Natural Language Control",
+    description: "Enterprise-grade cinematography platform translating natural language directions into precise technical parameters. Integrates Disney's 12 principles of animation with professional cinematography knowledge, 3D spatial awareness, and virtual production environments similar to Disney Stagecraft. Monorepo architecture with microservices, containerization, and CI/CD pipelines for scalable cloud deployment.",
+    technologies: ["React 18", "Next.js 14", "Three.js 3D Rendering", "Node.js Microservices", "PostgreSQL", "MongoDB", "Redis", "Docker/Kubernetes", "GitHub Actions CI/CD", "Tailwind CSS"],
+    achievements: ["Natural Language to Technical Translation", "Disney Animation Principles Engine", "Real-time Virtual Production", "3D Spatial Cinematography", "Monorepo Architecture", "Professional NLE Workflow Integration"],
     category: "ai",
     status: "development",
     icon: "video"
   },
   {
-    id: "radeon-small-model",
-    title: "Radeon SML - Small Memory Language Model",
-    subtitle: "Modular AI System Optimized for Radeon GPUs with Limited VRAM",
-    description: "Advanced modular AI system featuring hardware-adaptive VRAM detection (2GB-8GB configurations), ROCm optimization, offline Wikipedia knowledge base, and revolutionary ethical safeguards based on Asimov's Three Laws of Robotics. Built specifically for AMD Radeon community with comprehensive testing and performance optimization.",
-    technologies: ["AMD ROCm", "Python 3.10+", "Vector Embeddings", "DistilBERT", "MiniLM", "Wikipedia API", "Asimov Safety Protocols", "Hardware Detection"],
-    achievements: ["Hardware-Adaptive VRAM Detection", "Ethical AI Safety Implementation", "Offline Wikipedia Knowledge Base", "2-5 Second Response Times", "Open Source Community Project", "Comprehensive Testing Suite"],
+    id: "radeon-sml-ethics",
+    title: "Radeon SML - AI Ethics Knowledge Assistant",
+    subtitle: "Production AI Ethics Chatbot with Full-Stack Architecture",
+    description: "Comprehensive AI ethics knowledge assistant built from ground up on consumer hardware constraints. Features Wikipedia data pipeline, vector search, Asimov's Laws implementation, and production deployment. Evolved from simple chatbot concept to full-stack system with React frontend, FastAPI backend, PostgreSQL database, and GCP deployment. Live production system serving 99.7% uptime with 2.1s average response time.",
+    technologies: ["React 18", "Next.js 14", "FastAPI", "PostgreSQL", "Vector Embeddings", "Google Cloud Run", "Docker", "Terraform", "Redis Caching", "Wikipedia API", "OpenAI Integration"],
+    achievements: ["Live Production Deployment", "339+ Article Knowledge Base", "Asimov's Laws Implementation", "Hardware-Constrained Development", "Full DevOps Pipeline", "99.7% Uptime Achievement"],
     category: "ai",
-    status: "development",
-    icon: "microchip"
+    status: "live",
+    icon: "brain",
+    liveUrl: "https://radeon-ai-frontend.netlify.app"
   }
 ];
