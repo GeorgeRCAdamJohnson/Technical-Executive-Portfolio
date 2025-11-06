@@ -375,51 +375,51 @@ const ExecutiveProfile: React.FC = () => {
             marginBottom: 'var(--spacing-xl)'
           }}>
             <div style={{ 
-              background: 'linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%)', 
+              background: 'var(--primary-color)', 
               color: 'var(--white)',
               padding: 'var(--spacing-xl)', 
               borderRadius: 'var(--radius-lg)',
               boxShadow: 'var(--shadow-lg)'
             }}>
-              <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-xl)' }}>
+              <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-xl)', color: 'var(--white)', fontWeight: '700' }}>
                 <i className="fas fa-chart-line" style={{ marginRight: 'var(--spacing-sm)' }}></i>
                 Continuous Growth
               </h3>
-              <p style={{ lineHeight: '1.6' }}>
+              <p style={{ lineHeight: '1.6', color: 'var(--white)', fontSize: 'var(--font-size-md)' }}>
                 I believe in constantly exploring and growing my skillset. Technology evolves rapidly, 
                 and effective leaders must stay ahead of the curve while fostering a culture of learning within their teams.
               </p>
             </div>
             
             <div style={{ 
-              background: 'linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%)', 
+              background: 'var(--secondary-color)', 
               color: 'var(--white)',
               padding: 'var(--spacing-xl)', 
               borderRadius: 'var(--radius-lg)',
               boxShadow: 'var(--shadow-lg)'
             }}>
-              <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-xl)' }}>
+              <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-xl)', color: 'var(--white)', fontWeight: '700' }}>
                 <i className="fas fa-award" style={{ marginRight: 'var(--spacing-sm)' }}></i>
                 High Quality Standards
               </h3>
-              <p style={{ lineHeight: '1.6' }}>
+              <p style={{ lineHeight: '1.6', color: 'var(--white)', fontSize: 'var(--font-size-md)' }}>
                 I maintain a high quality bar in everything I do - from code architecture to team performance. 
                 Quality isn't just about the end product; it's about the processes, culture, and standards we establish.
               </p>
             </div>
             
             <div style={{ 
-              background: 'linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-light) 100%)', 
+              background: 'var(--accent-color)', 
               color: 'var(--white)',
               padding: 'var(--spacing-xl)', 
               borderRadius: 'var(--radius-lg)',
               boxShadow: 'var(--shadow-lg)'
             }}>
-              <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-xl)' }}>
+              <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-xl)', color: 'var(--white)', fontWeight: '700' }}>
                 <i className="fas fa-users" style={{ marginRight: 'var(--spacing-sm)' }}></i>
                 Team Excellence
               </h3>
-              <p style={{ lineHeight: '1.6' }}>
+              <p style={{ lineHeight: '1.6', color: 'var(--white)', fontSize: 'var(--font-size-md)' }}>
                 I'm experienced in hiring high quality teams and believe that great products come from great people. 
                 My focus is on building diverse, skilled teams that challenge each other and drive innovation.
               </p>
